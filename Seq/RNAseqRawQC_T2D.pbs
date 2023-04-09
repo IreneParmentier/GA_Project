@@ -25,10 +25,12 @@ do
 	parallel-fastq-dump --sra-id $ID --threads 8 -X 1000000
 
 	# Perform QC with fastqc on the raw reads outputting everything in the Gr1fastqc folder (--outdir Gr1fastqc)
-	fastqc --outdir Gr2fastqc ${ID}.fastq
+	#fastqc --outdir Gr2fastqc ${ID}.fastq
+	fastqc --outdir fastqc $ID.fastq
 
 	# Remove fastq files to reduce disk usage
-	rm ${ID}.fastq
+	#rm ${ID}.fastq
+	rm $ID.fastq
 done
 
 # Print out the IDs processed

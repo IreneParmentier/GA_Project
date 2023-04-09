@@ -30,7 +30,7 @@ kallisto index -i Human_index Human_PseudoTranscriptome.fa
 
 # Make a directory to store kallisto logs
 mkdir kallisto_logs
-mkdir fastqc
+# mkdir fastqc
 
 # For loop over all samples
 for ID in SAMEA4437008 SAMEA4437009	SAMEA4437010 SAMEA4437011 SAMEA4437012 SAMEA4437013 SAMEA4437014				
