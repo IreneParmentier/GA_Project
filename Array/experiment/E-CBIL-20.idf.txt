@@ -1,0 +1,48 @@
+Investigation Title	Transcription profiling of human pancreatic islets from normal and Type 2 diabetic subjects	
+Comment[Submitted Name]	RAD.Study[study_id=2160]: Human pancreatic islets from normal and Type 2 diabetic subjects	
+Experimental Design	disease_state_design	transcription profiling by array	
+Experimental Design Term Source REF	The MGED Ontology	EFO	
+Comment[ArrayExpressReleaseDate]	2009-07-28	
+Comment[AEMIAMESCORE]	4	
+Comment[ArrayExpressAccession]	E-CBIL-20	
+Comment[MAGETAB TimeStamp_Version]	2011-06-28 12:29:54 Last Changed Rev: 14857	
+Experimental Factor Name	Race/Ethnicity	Sex	Type 2 Diabetes Status	
+Experimental Factor Type	physical_characteristics	sex	disease_state	
+Experimental Factor Term Source REF	
+Person Last Name	Kahn	Liu	
+Person First Name	Ronald	Junmin	
+Person Mid Initials	
+Person Email	c.ronald.kahn@joslin.harvard.edu	junmin@pcbi.upenn.edu	
+Person Phone	
+Person Fax	
+Person Address	1 Joslin Place; Boston; Massachusetts; 02215; USA	
+Person Affiliation	Joslin Diabetes Center and Harvard Medical School	
+Person Roles	submitter	data_coder	
+Person Roles Term Source REF			
+Quality Control Type	
+Quality Control Term Source REF	
+Replicate Type	
+Replicate Term Source REF	
+Normalization Type	
+Normalization Term Source REF	
+Date of Experiment	
+Public Release Date	2009-07-28	
+PubMed ID	16096055	
+Publication DOI	16096055	
+Publication Author List	Gunton Jenny E, Kulkarni Rohit N, Yim SunHee, Okada Terumasa, Hawthorne Wayne J, Tseng Yu-Hua, Roberson Russell S, Ricordi Camillo, O'Connell Philip J, Gonzalez Frank J, Kahn C Ronald	
+Publication Title	Loss of ARNT/HIF1beta mediates altered gene expression and pancreatic-islet dysfunction in human type 2 diabetes.	
+Publication Status	journal_article	
+Publication Status Term Source REF	The MGED Ontology	
+Experiment Description	Human pancreatic islets isolated from 7 people with normal glucose tolerance, and 5 people with type 2 diabetes. All 12 people were organ donors after either cerebrovascular accident or intracerebral haemorrhage. Normals were required to maintain glucose at least 6.1mM in intensive care. Diabetic subjects were all at least 10 years from diagnosis and not insulin-requiring. For every subject, RNA was isolated, cRNA was made and hybridized to the U133A and U133B Affymetrix arrays (total of 24 arrays). No samples were pooled.	
+Protocol Name	
+Protocol Type	
+Protocol Description	
+Protocol Parameters	
+Protocol Hardware	
+Protocol Software	
+Protocol Contact	
+Protocol Term Source REF	
+SDRF File	E-CBIL-20.sdrf.txt	
+Term Source Name	The MGED Ontology	EFO	
+Term Source File	http://mged.sourceforge.net/ontologies/MGEDontology.php	http://www.ebi.ac.uk/efo/	
+Term Source Version			

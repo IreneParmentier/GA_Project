@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+
+#PBS -l nodes=1:ppn=8
+#PBS -l walltime=00:30:00
+#PBS -l mem=4gb
+
+# Load the necessary modules
+module load FastQC/0.11.9-Java-11
+module load parallel-fastq-dump/0.6.7-gompi-2022a
+
+# Change to the directory you are working in
+cd /user/gent/458/vsc45855/HW2
+
+
+# Make a directory to store fastqc output
+mkdir fastqc
+
+# For loop over all samples
+for ID in SAMEA4437008 SAMEA4437009	SAMEA4437010 SAMEA4437011 SAMEA4437012 SAMEA4437013 SAMEA4437014			
+do
+	# Echo the ID you are processing
+	echo $ID
+
+	# Load the first (-X 1000000) 1,000,000 reads for the ID (--sra-id $ID) you are processing using 8 cores (--threads 8)
+	parallel-fastq-dump --sra-id $ID --threads 8 -X 1000000
+
+	# Perform QC with fastqc on the raw reads outputting everything in the Gr1fastqc folder (--outdir Gr1fastqc)
+	fastqc --outdir Gr2fastqc ${ID}.fastq
+
+	# Remove fastq files to reduce disk usage
+	rm ${ID}.fastq
+done
+
+# Print out the IDs processed
+echo " SAMEA4437008 SAMEA4437009	SAMEA4437010 SAMEA4437011 SAMEA4437012 SAMEA4437013 SAMEA4437014		"

@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+#PBS -l nodes=1:ppn=1
+#PBS -l walltime=00:30:00
+#PBS -l mem=16gb
+
+# "# command" was used as a placeholder where a line of code should be inserted
+
+# Load the necessary modules
+# no modules required
+
+# Change to the directory you are working in 
+cd /user/gent/458/vsc45855/HW2
+
+
+
+# Download reference genome & genome annotation
+wget ftp://ftp.ensembl.org/pub/release-109/fasta/homo_sapiens/dna_index/Homo_sapiens.GRCh38.dna.toplevel.fa.gz
+wget ftp://ftp.ensembl.org/pub/release-109/gtf/homo_sapiens/Homo_sapiens.GRCh38.109.chr.gtf.gz
+
+# Unzip
+pigz -d *.gz
